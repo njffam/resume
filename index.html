@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Alice, resume, cv">
     <meta name="description" content="Это сайт резюе Алисы Наджафи">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="02_fonts.css">
     <title>Alice resume</title>
 </head>
 <body>
 
- <img src="logo.jpg" alt="Алиса Наджафи" width="200">
+    <div class="container">
+<div class="info"> 
+
+ <img src="logo.jpg" alt="Алиса Наджафи" class="avatar" >
+ 
+ <div class="info-text">
  <h1>Алиса Наджафи</h1>
 
  <p>Я начала изучать <strong>разработку, чтобы работа доставляла мне <em>удовольствие. </em> </strong></p>
@@ -20,27 +27,32 @@
  <h4>Список социальных сетей:</h4>
 
  <a href="https://www.instagram.com/najafi_collection/" target="_blank">Instagram</a>
+ </div>
+</div>
 
- <h2>Мои хобби:</h2>
+<div class="card bg-yellow">
+   <h2>Мои хобби:</h2> 
 
- <ol>
-    <li>Готовить</li>
-    <li>Печь</li>
-    <li>Читать</li>
-    <li>Монтировать видео</li>
-    <li>Экстримальные карусели</li>
- </ol>
+     <ol class="list">
+       <li>Готовить</li>
+       <li>Печь</li>
+       <li>Читать</li>
+       <li>Монтировать видео</li>
+       <li>Экстримальные карусели</li>
+     </ol>
+</div>
 
+<div class="card bg-green">
  <h2>Опыт работы</h2>
 
- <table>
-    <thead>
+ <table class="table">
+    <!-- <thead>
         <tr>
           <th>Название</th>
           <th>Должность</th>
           <th>Год</th>
         </tr>
-    </thead>
+    </thead> -->
     <tbody>
         <tr>
              <td>Федерация Карате</td>
@@ -54,28 +66,38 @@
         </tr>
     </tbody>
  </table>
+</div>
 
- <h2>Связаться со мной</h2>
-        <div>
+<div class="card bg-red">
+
+ 
+       <form action="/" class="form">
+        <h2>Связаться со мной</h2>
+        <div class="form-row">
+ 
+ <div class="form-group">
             <label for="name">Ваше имя</label>
             <input type="name" id="name" placeholder="Введите имя">
         </div>  
 
-        <div>
+        <div class="form-group">
             <label for="email">Введите email</label>
             <input type="email" id="email" placeholder="Введите email">
         </div> 
+    </div>
 
-        <div>
+        <div class="form-group">
             <label for="message">Ваше сообщение</label>
-            <br>
             <textarea type="message" id="message"  cols="25" rows="6" placeholder="Введите сообщение..."></textarea>
         </div> 
 
         <div>
           
-            <!-- <input type="submit" value="Отправить"> -->
-            <button type="sumbit">Отправить!</button>
+            <input class="btn" type="submit" value="Отправить"> 
+            
         </div> 
+    </div>
+</div>
+</form>
 </body>
 </html>
